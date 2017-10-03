@@ -20,14 +20,14 @@ The solution is rather raw and needs to be refactored (someday, maybe), but it w
                  
                .borderColor (string, optional) - color of window border and title bar (default '#3333CC');
                  
-			         .backgroundColor (string, optional) -  background color for window content (default '#ffffff'). 
+	       .backgroundColor (string, optional) -  background color for window content (default '#ffffff'). 
                                              Might by empty string or false to specify transparent background;
                
                .headerTxtClass (string, optional) The header text in the title bar is wrapped into the SPAN element.
                                              The property allows to define a CSS class for this SPAN element
                                              (default - emopty string);
                                               
-			         .headerTxtColor (string, optional) If you dont need a whole of CSS class for header text, 
+	       .headerTxtColor (string, optional) If you dont need a whole of CSS class for header text, 
                                              you may define only color (default '#CCCC33').
                                              If the .headerTxtClass is defined, this property is ignored.
   
