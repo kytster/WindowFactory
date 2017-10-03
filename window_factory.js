@@ -88,7 +88,7 @@ function WindowFactory_(styles,orig){
 		for(var indx in lbls=['_','[ ]','X'])this.controls.appendChild(createButton(this.buttonPressed,lbls[indx],lbls[indx]=='[ ]'));
 		this.ifr=doc.createElement('iframe');var f=this.ifr;
 		f.style.position='relative';f.style.width='100%';f.style.border='none';
-		f.style.backgroundColor=styles.backgroundColor;
+		if(styles.backgroundColor)f.style.backgroundColor=styles.backgroundColor;
 		f.src=src;
 		this.div.appendChild(f);
 		iefx=doc.all?this.borderWidth:0;
