@@ -8,7 +8,7 @@ The solution is rather raw and needs to be refactored (someday, maybe), but it w
 
 ### Constructor
       
-      object WindowFactory = WindowFactory_(object styles, object orig);
+      object WindowFactory = new WindowFactory_(object styles, object orig);
       
           where:
           
