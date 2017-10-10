@@ -12,7 +12,7 @@ The solution is rather raw, and should be refactored (someday, maybe), but it wo
       
 where:
           
-  **styles** (object, optional) - set of attributes, defining look of the window. Object may (or may not) include the following properties:
+  **styles** (object, optional) - set of properties, defining look of the window. Object may (or may not) include the following properties:
                     
 	.borderWidth (integer, optional) - width of window border in pixels (default 2);
                  
@@ -29,3 +29,21 @@ where:
                                       you may define only color (default '#CCCC33').
                                       If the .headerTxtClass is defined, this property is ignored.
   
+
+  **orig** (object, optional) - set of properties, defining the originating point and default size for new windows. Object may (or may not) include the following properties:
+  
+  	.x (integer, optional) - left offset of originating point for new windows in pixels (default: 10);
+	
+	.y (integer, optional) - top offset of originating point for new windows in pixels (default: 80);
+	
+	.w (integer, optional) - default width for new windows in pixels (default:600);
+	
+	.h (integer, optional) - default height for new windows in pixels (default:400);
+	
+### Properties
+
+**.shft** (integer) - amount of pixels, each new window is shifted by, regarding previous one. The first window created by the addWindow() method is placed into originating point (if no other position specified). Each new window will be shifted by the **shft** pixels right and down from the originating point (if no other position specified).
+
+**.Windows** (array)
+
+	
