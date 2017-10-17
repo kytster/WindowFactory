@@ -58,13 +58,14 @@ Arguments:
 
 **pos** (object, optional) - set of properties, defining position and size of the window. Object may (or may not) include the following properties:
   
-  	.x (integer, optional) - left offset of originating point for new windows in pixels (default: 10);
+  	.x (integer, optional) - left offset for the new windows in pixels;
 	
-	.y (integer, optional) - top offset of originating point for new windows in pixels (default: 80);
+	.y (integer, optional) - top offset for the new windows in pixels;
 	
-	.w (integer, optional) - default width for new windows in pixels (default:600);
+	.w (integer, optional) - width for new windows in pixels (default:600);
 	
-	.h (integer, optional) - default height for new windows in pixels (default:400);
+	.h (integer, optional) - height for new windows in pixels (default:400);
 	
+If .x and/or .y not specified, then the corresponding offset is defined by the originating point and the value of _shft_ property.
 	
 	
