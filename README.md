@@ -1,6 +1,6 @@
 # Window Factory
 
-Window Factory is the javascript object for creating and managing windows on a web page within the browser window. Each window created by the object looks and behaves like conventional window in the OS, and can be dragged, resized, minimised, maximised, and even closed. Each window has a frame (absolute positioned DIV element) with a title bar and control buttons. Content is represented by iFRAME element, embedded into this DIV.
+Window Factory is the javascript object for creating and managing windows on a web page within the browser window. Each window created by the object looks and behaves like conventional window in the OS, and can be dragged, resized, minimised, maximised, and even closed. Each window has a frame (absolute positioned DIV element) with a title bar and control buttons. Content is represented by IFRAME element, embedded into this DIV.
 
 The solution is rather raw, and should be refactored (someday, maybe), but it works pretty fine, so, following the good practice: if it works - do not touch.
 
@@ -42,8 +42,29 @@ where:
 	
 ### Properties
 
-**.shft** (integer) - amount of pixels, each new window is shifted by, regarding previous one. The first window created by the addWindow() method is placed into originating point (if no other position specified). Each new window will be shifted by the **shft** pixels right and down from the originating point (if no other position specified).
+**.shft** (integer) - amount of pixels, each new window is shifted by, regarding previous one. The first window created by the addWindow() method is placed into originating point (if no other position specified). Each new window, created by the method will be shifted by the _shft_ pixels right and down from the previous one (if no other position specified).
 
-**.Windows** (array)
+**.Windows** (array) - array of objects, representing windows. Windows are placed in the array in the order of creation. When the window is closed by close button (at the right top corner) it is kicked out from the array, and the array is reordered.
 
+### Method
+
+**.addWindow** (src,header_text,pos) - creates new window, places it on screen on top over all previously created windows (if any). Method returns an object, representing created window (see below).
+
+Arguments:
+
+**src** (string / url, optional) - the source attribute for the IFRAME element representing the content area of window.
+
+**header_text** (string, optional) - text for the window header.
+
+**pos** (object, optional) - set of properties, defining position and size of the window. Object may (or may not) include the following properties:
+  
+  	.x (integer, optional) - left offset of originating point for new windows in pixels (default: 10);
+	
+	.y (integer, optional) - top offset of originating point for new windows in pixels (default: 80);
+	
+	.w (integer, optional) - default width for new windows in pixels (default:600);
+	
+	.h (integer, optional) - default height for new windows in pixels (default:400);
+	
+	
 	
