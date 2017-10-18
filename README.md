@@ -68,4 +68,39 @@ Arguments:
 	
 If .x and/or .y not specified, then the corresponding offset is defined by the originating point and the value of _shft_ property.
 	
+Returned value: 
+
+Method returns an object, representing created window. The object is rather large and complex, and is not intended for using separately, but there are some properties and methods that might be useful. Properties marked as readonly, actually may be rewritten, but it may lead to unpredictable behaviour.
+
+        **Properties**
 	
+		**.active** (boolean, readoonly) - ;
+		
+		**.closed** (boolean, readoonly) - ;
+		
+		**.maxed** (boolean, readoonly) - ;
+		
+		**.mined** (boolean, readoonly) - ;
+		
+		**.Wmin** (integer) - ;
+		
+		**.Hmin** (integer) - ;
+		
+		**.div** (object) - ;
+		
+		**.ifr** (object) - ;
+		
+	**Methods**
+	
+		**void .show(pos, header_text)**
+		
+		**void .hide()**
+		
+		**void .triggerMin()**
+		
+		**void .triggerMax()**
+		
+		
+
+
+
