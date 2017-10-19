@@ -72,33 +72,33 @@ Returned value:
 
 Method returns an object, representing created window. The object is rather large and complex, and is not intended for using separately, but there are some properties and methods that might be useful. Properties marked as readonly, actually may be rewritten, but it may lead to unpredictable behaviour.
 
-        **Properties**
+#### Properties
 	
-		**.active** (boolean, readoonly) - ;
+**.active** (boolean, readoonly) - indicates that the window is active. The window becomes active, when it is created, using addWindow() method, or when it is clicked by a user. All other windows become inactive (dimmed);
 		
-		**.closed** (boolean, readoonly) - ;
+**.closed** (boolean, readoonly) - ;
 		
-		**.maxed** (boolean, readoonly) - ;
+**.maxed** (boolean, readoonly) - ;
 		
-		**.mined** (boolean, readoonly) - ;
+**.mined** (boolean, readoonly) - ;
 		
-		**.Wmin** (integer) - ;
+**.Wmin** (integer) - ;
 		
-		**.Hmin** (integer) - ;
+**.Hmin** (integer) - ;
 		
-		**.div** (object) - ;
+**.div** (object) - ;
 		
-		**.ifr** (object) - ;
+**.ifr** (object) - ;
 		
-	**Methods**
+#### Methods
 	
-		**void .show(pos, header_text)**
+**void .show(pos, header_text)**
 		
-		**void .hide()**
+**void .hide()**
 		
-		**void .triggerMin()**
+**void .triggerMin()**
 		
-		**void .triggerMax()**
+**void .triggerMax()**
 		
 		
 
