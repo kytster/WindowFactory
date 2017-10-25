@@ -76,19 +76,19 @@ Method returns an object, representing created window. The object is rather larg
 	
 **.active** (boolean, readoonly) - indicates that the window is active. The window becomes active, when it is created, using addWindow() method, or when it is clicked by a user. All other windows become inactive (dimmed);
 		
-**.closed** (boolean, readoonly) - ;
+**.closed** (boolean, readoonly) - indicates that the window is closed. When user closes the window with the close button at the top right corner, the window is hidden from screen and pulled out of the Windows array of WindowFactory. But there might be a reference to the window object, saved somewhere as a result of the addWindow method. So the property might be useful to figure out that the window is "out of the game".;
 		
-**.maxed** (boolean, readoonly) - ;
+**.maxed** (boolean, readoonly) -  indicates that the window is maximazed.;
 		
-**.mined** (boolean, readoonly) - ;
+**.mined** (boolean, readoonly) -  indicates that the window is minimazed.;
 		
-**.Wmin** (integer) - ;
+**.Wmin** (integer) - minimum width (in pixels), the window may be resized to, by dragging its edge;
 		
-**.Hmin** (integer) - ;
+**.Hmin** (integer) - minimum height (in pixels), the window may be resized to, by dragging its edge;
 		
-**.div** (object) - ;
+**.div** (object) - HTML DIV element, representing a frame of the window (title bar and borders);
 		
-**.ifr** (object) - ;
+**.ifr** (object) - HTML IFRAME element, representing content of the window;
 		
 #### Methods
 	
