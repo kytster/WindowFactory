@@ -91,14 +91,12 @@ Method returns an object, representing created window. The object is rather larg
 **.ifr** (object) - HTML IFRAME element, representing content of the window;
 		
 #### Methods
-	
-**void .show(pos, header_text)**
 		
-**void .hide()**
+**void .hide()** - closes the window. The window closes when a user click "close" button at the top right corner. Using this method, the window can be closed programmatically.
 		
-**void .triggerMin()**
+**void .triggerMin()** - switches the state of the view of the window from normal to minimized, and vice-versa
 		
-**void .triggerMax()**
+**void .triggerMax()** - switches the state of the view of the window from normal to maximized, and vice-versa
 		
 		
 
